@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+  <header>
+    <h1>Spotify Clone</h1>
+  </header>
+
+  <main>
+    <div class="playlists">
+      <h2>Playlists</h2>
+      <ul id="playlist-list">
+        <!-- Playlist items will be dynamically added here -->
+      </ul>
+    </div>
+
+    <div class="songs">
+      <h2>Songs</h2>
+      <ul id="song-list">
+        <!-- Song items will be dynamically added here -->
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <div class="music-player">
+      <div id="player-info">
+        <div id="song-title"></div>
+        <div id="song-artist"></div>
+      </div>
+      <div id="player-controls">
+        <button id="previous-btn">&#9664;</button>
+        <button id="play-btn">&#9658;</button>
+        <button id="next-btn">&#9654;</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="spotify.js"></script>
+</body>
+</html>

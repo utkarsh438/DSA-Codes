@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* Style the table */
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			max-width: 800px;
+			margin: auto;
+		}
+		
+		/* Style the table header */
+		th {
+			background-color: #f2f2f2;
+			text-align: left;
+			padding: 8px;
+		}
+		
+		/* Style the table rows */
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+		
+		tr:nth-child(odd) {
+			background-color: #fff;
+		}
+		
+		/* Style the table cells */
+		td {
+			padding: 8px;
+			text-align: left;
+			vertical-align: top;
+			border: 1px solid #ddd;
+		}
+		
+		/* Responsive styles */
+		@media only screen and (max-width: 600px) {
+			table, thead, tbody, th, td, tr {
+				display: block;
+			}
+			
+			thead tr {
+				position: absolute;
+				top: -9999px;
+				left: -9999px;
+			}
+			
+			td {
+				border: none;
+				position: relative;
+				padding-left: 50%;
+			}
+			
+			td:before {
+				position: absolute;
+				top: 6px;
+				left: 6px;
+				width: 45%;
+				padding-right: 10px;
+				white-space: nowrap;
+				content: attr(data-label);
+				font-weight: bold;
+			}
+			td:nth-of-type(1):before { content: "Time"; }
+			td:nth-of-type(2):before { content: "Monday"; }
+			td:nth-of-type(3):before { content: "Tuesday"; }
+			td:nth-of-type(4):before { content: "Wednesday"; }
+			td:nth-of-type(5):before { content: "Thursday"; }
+			td:nth-of-type(6):before { content: "Friday"; }
+		}
+	</style>
+</head>
+<body>
+
+<table>
+	<thead>
+		<tr>
+			<th>Time</th>
+			<th>Monday</th>
+			<th>Tuesday</th>
+			<th>Wednesday</th>
+			<th>Thursday</th>
+			<th>Friday</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td data-label="Time">9:00 - 10:00 AM</td>
+			<td data-label="Monday">Math</td>
+			<td data-label="Tuesday">English</td>
+			<td data-label="Wednesday">Science</td>
+			<td data-label="Thursday">Social Studies</td>
+			<td data-label="Friday">Physical Education</td>
+		</tr>
+		<tr>
+			<td data-label="Time">10:00 - 11:00 AM</td>
+			<td data-label="Monday">English</td>
+			<td data-label="Tuesday">Math</td>
+			<td data-label="Wednesday">Social Studies</td>
+			<td data-label="Thursday">Science</td>
+			<td data-label="Friday">Art</td>
+		</tr>
+		<tr>
+			<td data-label="Time">11:00 AM - 12:00 PM</td>
+			

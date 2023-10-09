@@ -1,0 +1,57 @@
+/* Styles for header */
+header {
+    background: #1db954;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Styles for main content area */
+  main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Styles for playlists section */
+  .playlists, .songs {
+    flex-basis: 45%;
+  }
+  
+  .playlists h2, .songs h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for song and playlist lists */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 10px;
+    background: #f8f8f8;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  li:hover {
+    background: #ebebeb;
+  }
+  
+  /* Styles for music player section */
+  footer {
+    background: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #player-info {
+    margin-bottom: 10px;
+  }
+  
+  #player-controls button {
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
